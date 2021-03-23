@@ -1,0 +1,11 @@
+.disenios_container{
+    padding: 3rem 0;
+}
+.disenios_text_wrap{
+    padding-bottom: 2rem;
+    width: 57.547%;
+}
+.disenios_text_wrap h2{
+    color: #749E52;
+    border-bottom: solid 4px #749E52;
+}

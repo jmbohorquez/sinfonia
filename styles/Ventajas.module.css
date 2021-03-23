@@ -1,0 +1,18 @@
+.container{
+    padding: 4rem 0;
+}
+.container h2{
+    color: #749E52;
+    border-bottom: solid 4px #749E52;
+    margin: auto auto 4rem;
+    text-align: center;
+    max-width: 65%;
+}
+.columna svg{
+    height: auto;
+    width: 80px;
+}
+.botones_cta{
+    padding-top: 4rem;
+    justify-content: center;
+}

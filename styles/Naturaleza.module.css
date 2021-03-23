@@ -1,0 +1,15 @@
+.container{
+    background-color: #EFDBB5;
+    padding: 4rem 0;
+}
+.text_container h2{
+    color: #749E52;
+    border-bottom: solid 4px #749E52;
+}
+.sub_titulo{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.slider{
+    position: relative;
+}

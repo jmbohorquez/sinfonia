@@ -1,0 +1,40 @@
+.container{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.image_bg_container{
+    height: 100%;
+    width: 100%;
+}
+.image_bg_container div{
+    height: 100%;
+    width: 100%;
+}
+.text_container{
+    align-items: center;
+    display: flex;
+    background-color: rgba(0,0,0,.4);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.text_container p{
+    color: #FFF;
+}
+.titulo_container{
+    padding-right: 2rem;
+    width: 50%;
+}
+.titulo_container h2, .titulo_container p{
+    color: #FFF;
+}
+.titulo_container p{
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.botones_cta{
+    justify-content: center;
+}

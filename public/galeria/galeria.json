@@ -1,0 +1,58 @@
+[
+    {
+        "id":0,
+        "url": "/galeria/foto-1.jpg",
+        "alt": "Río Tabacal en el condominio Sinfonía",
+        "ancho":1920,
+        "alto":1080
+    },
+    {
+        "id":1,
+        "url": "/galeria/foto-2.jpg",
+        "alt": "Condominio Sinfonía en las montañas de La Vega",
+        "ancho":1920,
+        "alto":1080
+    },
+    {
+        "id":2,
+        "url": "/galeria/foto-3.jpg",
+        "alt": "Bosque de bambú",
+        "ancho":1920,
+        "alto":1080
+    },
+    {
+        "id":3,
+        "url": "/galeria/foto-4.jpg",
+        "alt": "Bosque y río Tabacal",
+        "ancho":1920,
+        "alto":1080
+    },
+    {
+        "id":4,
+        "url": "/galeria/foto-5.jpg",
+        "alt": "Vista aerea del condominio",
+        "ancho":1920,
+        "alto":1080
+    },
+    {
+        "id":5,
+        "url": "/galeria/foto-6.jpg",
+        "alt": "Vista aerea del condominio",
+        "ancho":1920,
+        "alto":1080
+    },
+    {
+        "id":6,
+        "url": "/galeria/foto-7.jpg",
+        "alt": "Vista aerea del condominio",
+        "ancho":1920,
+        "alto":1080
+    },
+    {
+        "id":7,
+        "url": "/galeria/foto-8.jpg",
+        "alt": "Vista lateral de la casa",
+        "ancho":1920,
+        "alto":1080
+    }
+]

@@ -1,0 +1,49 @@
+
+.container{
+    bottom: 1rem;
+    position: fixed;
+    right: 1rem;
+    z-index: 99999;
+}
+.boton_whatsapp{
+    align-items: center;
+    background-color: #25D366;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #000;
+    justify-content: center;
+    height: 48px;
+    line-height: 0;
+    width: 48px;
+}
+.boton_whatsapp svg{
+    fill: #FFF;
+}
+.boton_email{
+    align-items: center;
+    background-color: #B73841;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #000;
+    justify-content: center;
+    height: 48px;
+    line-height: 0;
+    width: 48px;
+}
+.boton_email svg{
+    fill: #FFF;
+}
+.boton_phone{
+    align-items: center;
+    background-color: #D8A03E;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #000;
+    justify-content: center;
+    height: 48px;
+    line-height: 0;
+    width: 48px;
+}
+.boton_phone svg{
+    fill: #FFF;
+}
