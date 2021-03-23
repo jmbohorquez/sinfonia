@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import BotonContacto from '../components/BotonContacto';
 import styles from '../styles/Ventajas.module.css'
 
 const Ventajas = () => {
@@ -46,11 +47,7 @@ const Ventajas = () => {
                     >
                         <a className="btn btn-rojo">Quiero ver más fotos</a>
                     </Link>
-                    <Link
-                        href="#"
-                    >
-                        <a className="btn btn-amarillo">Quiero contactarlos</a>
-                    </Link>
+                    <BotonContacto />
                 </div>
             </div>
         </section>

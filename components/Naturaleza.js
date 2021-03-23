@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NaturalezaSlider from './NaturalezaSlider';
 import styles from '../styles/Naturaleza.module.css'
+import BotonContacto from '../components/BotonContacto';
 
 const Naturaleza = () => {
 
@@ -18,11 +19,7 @@ const Naturaleza = () => {
                             >
                                 <a className="btn btn-rojo">Quiero ver las ventajas</a>
                             </Link>
-                            <Link
-                                href="#"
-                            >
-                                <a className="btn btn-amarillo">Quiero contactarlos</a>
-                            </Link>
+                            <BotonContacto />
                         </div>
                     </div>
                     <div className={ `${ styles.slider } block-column` }>

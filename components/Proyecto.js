@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link'
+import BotonContacto from '../components/BotonContacto';
 import styles from '../styles/Proyecto.module.css';
 
 const Proyecto = () => {
@@ -39,11 +40,7 @@ const Proyecto = () => {
                             >
                                 <a className="btn btn-rojo">Quiero ver los diseños</a>
                             </Link>
-                            <Link
-                                href="#"
-                            >
-                                <a className="btn btn-amarillo">Quiero contactarlos</a>
-                            </Link>
+                            <BotonContacto />
                         </div>
                     </div>
                 </div>

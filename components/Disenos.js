@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BotonContacto from '../components/BotonContacto';
 import styles from '../styles/Disenios.module.css'
 
 const Disenios = () => {
 
+    
+    
     return(
         <section id="Disenios" className={ styles.disenios_container }>
             <div className="site-wrap">
@@ -16,11 +19,7 @@ const Disenios = () => {
                         >
                             <a className="btn btn-rojo">Quiero ver las zonas de recreación</a>
                         </Link>
-                        <Link
-                            href="#"
-                        >
-                            <a className="btn btn-amarillo">Quiero contactarlos</a>
-                        </Link>
+                        <BotonContacto />
                     </div>
                 </div>
                 <div className="block-columns has-3-columns">

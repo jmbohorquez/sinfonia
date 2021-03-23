@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Redes from '../components/Redes';
+import BotonContacto from '../components/BotonContacto';
 import styles from '../styles/Cabecera.module.css';
 
 const Cabecera = () => {
@@ -38,11 +39,7 @@ const Cabecera = () => {
                             >
                                 <a className="btn btn-rojo">Quiero saber más</a>
                             </Link>
-                            <Link
-                                href="#"
-                            >
-                                <a className="btn btn-amarillo">Quiero contactarlos</a>
-                            </Link>
+                            <BotonContacto />
                         </div>
                     </div>
                 </div>
