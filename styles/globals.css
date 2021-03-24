@@ -425,6 +425,14 @@ p{
     position: relative;
     z-index: 99999;
 }
+.video-arrow-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 4rem auto 0;
+    position: relative;
+    z-index: 99999;
+    width: fit-content;
+}
 .keen-slider{
     line-height: 0;
 }

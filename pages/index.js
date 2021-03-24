@@ -5,6 +5,7 @@ import Recracion from '../components/Recreacion';
 import Naturaleza from '../components/Naturaleza';
 import Ventajas from '../components/Ventajas';
 import GaleriaFotos from '../components/GaleriaFotos';
+import GaleriaVideos from '../components/GaleriaVideos';
 import BotonesFlotantes from '../components/BotonesFlotantes';
 import Contacto from '../components/Contacto';
 
@@ -18,6 +19,7 @@ export default function Home() {
             <Naturaleza />
             <Ventajas />
             <GaleriaFotos />
+            <GaleriaVideos />
             <Contacto />
             <BotonesFlotantes />
         </>

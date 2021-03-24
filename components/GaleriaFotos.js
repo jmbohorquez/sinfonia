@@ -39,7 +39,10 @@ const GaleriaFotos = () => {
             <div className="site-wrap block-grid has-3-columns">
                 {
                     Fotos.map( foto => (
-                        <div className={ `${ styles.imagen_contenedor } block-column` }>
+                        <div 
+                            key={ foto.id }
+                            className={ `${ styles.imagen_contenedor } block-column` }
+                        >
                             <Image 
                                 src={ foto.url }
                                 alt={ foto.alt }
