@@ -1,0 +1,48 @@
+@use './abstracts/variables' as *;
+
+.container{
+    background-color: #E2BE5E;
+    padding: 4rem 0;
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        iframe{
+            height: 174px;
+            width: 309px;
+        } 
+    }
+    
+    //Ipad
+    @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ) and (orientation: portrait){
+        iframe{
+            height: 174px;
+            width: 309px;
+        }  
+    }
+    
+    //iPad Pro
+    @media  only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait){
+        iframe{
+            height: 246px;
+            width: 437px;
+        }
+    }
+    
+    @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
+        
+        iframe{
+            height: 246px;
+            width: 437px;
+        }
+        
+    }
+    
+    @media ( min-width: $res-4k ){
+
+        iframe{
+            height: 558px;
+            width: 992px;
+        }
+
+    }
+}

@@ -1,5 +1,5 @@
 import Redes from '../components/Redes';
-import styles from '../styles/Footer.module.css'
+import styles from '../styles/Footer.module.scss';
 
 const Footer = () => {
 

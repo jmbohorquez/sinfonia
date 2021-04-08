@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import BotonContacto from '../components/BotonContacto';
-import styles from '../styles/Ventajas.module.css'
+import styles from '../styles/Ventajas.module.scss'
 
 const Ventajas = () => {
 
@@ -16,7 +16,7 @@ const Ventajas = () => {
                             </g>
                         </svg>
                         <p><strong>Una gran familia</strong></p>
-                        <p>40% de los 62 lotes del proyecto ya se encuentran vendidos. </p>
+                        <p>40% de los 62 lotes del proyecto ya se encuentran vendidos. 5% de los lotes ya están separados. 4 casas habitadas y 6 casas en construcción.</p>
                     </div>
                     <div className={ `${ styles.columna } block-column` }>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="7.512745098039218 13.722549019607834 187.87450980392157 174.45490196078433">
@@ -27,7 +27,8 @@ const Ventajas = () => {
                             </g>
                         </svg>
                         <p><strong>Las comodidades que buscas</strong></p>
-                        <p>Opcion de parqueaderos, energía eléctrica, servicio de agua de acueducto veredal, opcion de cobertura de servicios de internet satelita.</p>
+                        <p>Opcion de parqueaderos, energía eléctrica, servicio de agua de acueducto veredal, opcion de cobertura de servicios de internet satelital.</p>
+                        <p>El clima ideal del ser humano, 24 grados centígrados en el día y fresco en la noche, lo que evita el uso de aires acondicionados.</p>
                     </div>
                     <div className={ `${ styles.columna } block-column` }>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="2.9751567164179127 3.0246567164179083 194.05068656716418 194.05068656716418">
@@ -38,7 +39,7 @@ const Ventajas = () => {
                             </g>
                         </svg>
                         <p><strong>Fácil acceso</strong></p>
-                        <p>Por la autopista Bogotá - Medellín 1 km antes de llegar a La Vega, Cundinamarca, encuentra la tienda “Chilin”. Entre a la derecha por la carretera veredal y a 2 kilómetros lo recibe  “SINFONÍA DEL RÍO TABACAL”.</p>
+                        <p>Yendo por la autopista Bogotá - Medellín, Por fuera de la línea blanca que delimita la carretera, hay escrito un número cada 50 metros sobre el pavimento, indicando el kilómetro donde se encuentra. Este número parte de cero desde el puente de guadua del Río Bogotá. Al llegar al K 51+500 se voltea a la derecha por la carretera veredal y a 2 kms lo recibe el “Condominio Campestre Sinfonía del Río Tabacal”.</p>
                     </div>
                 </div>
                 <div className={ `${ styles.botones_cta } btn-container block-columns` }>

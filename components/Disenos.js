@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import BotonContacto from '../components/BotonContacto';
-import styles from '../styles/Disenios.module.css'
+import styles from '../styles/Disenios.module.scss'
 
 const Disenios = () => {
 

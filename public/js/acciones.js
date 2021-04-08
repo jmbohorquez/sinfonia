@@ -4,6 +4,7 @@ const video1 = document.getElementById( 'video-1' );
 const videoContainer2 = document.getElementById('video-container-2');
 const video2 = document.getElementById('video-2');
 
+
 videoContainer1.style.zIndex = '1';
 video1.play();
 
@@ -21,4 +22,3 @@ video2.addEventListener( 'ended', function(){
     videoContainer1.style.zIndex = '1';
     video1.play();
 } );
-

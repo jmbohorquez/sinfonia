@@ -1,0 +1,171 @@
+@use './components/normalize' as *;
+@use './abstracts/variables'as *;
+
+/* ======================================== Botones */
+
+@use './components/botones';
+
+/* ======================================== Tags */
+
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    font-weight: 900;
+}
+p{
+    color: #333;
+    font-size: 1.3rem;
+    line-height: 140%;
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        font-size: 1rem;
+    }
+
+    @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
+        font-size: 1.2rem;
+    }
+
+    @media ( min-width: $res-4k ){
+        font-size: 1.8rem;
+    }
+}
+
+/* ======================================== Clases */
+
+.arrow{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    background-color: #B73841;
+    height: 48px;
+    justify-content: center;
+    fill: #FFF;
+    margin-right: 4px;
+    padding: 0.8rem;
+    width: 48px;
+}
+.arrow-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: -24px;
+    margin-left: -24px;
+    position: relative;
+    z-index: 99999;
+}
+.video-arrow-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 4rem auto 0;
+    position: relative;
+    z-index: 99999;
+    width: fit-content;
+}
+.keen-slider{
+    line-height: 0;
+}
+.banner-container{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.banner-image-container{
+    position: relative;
+    height: 100%;
+
+    div{
+        height: 100%;
+        width: 100%;
+    }
+}
+.banner-text-container{
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.site-wrap{
+    margin: auto;
+    width: 88.3333%;
+
+    @media ( min-width: $res-4k ){
+        width: 80%;
+    }
+}
+.site-title{
+    border-bottom: solid 4px #FFF;
+    text-transform: uppercase;
+}
+h1.site-title{
+    font-size: 3rem;
+}
+h2.site-title{
+    font-size: 2.3rem;
+}
+
+/* ======================================== Columnas */
+
+.block-columns{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        flex-flow: row wrap;
+    }
+}
+.has-2-columns .block-column{
+    width: 50%;
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        width: 100%;
+    }
+}
+.has-3-columns .block-column{
+    width: 33.3333%;
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        width: 100%;
+    }
+}
+.block-grid{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 2rem;
+}
+.block-grid div{
+    line-height: 0;
+}
+.block-grid.has-3-columns .block-column{
+    margin-bottom: 2rem;
+    width: calc( 33.3333% - 2rem );
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        width: calc( 50% - 2rem );
+    }
+}

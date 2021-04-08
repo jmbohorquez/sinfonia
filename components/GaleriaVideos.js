@@ -1,7 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
-import 'keen-slider/keen-slider.min.css'
-import styles from '../styles/GaleriaVideos.module.css';
+import 'keen-slider/keen-slider.min.css';
+import { useMediaQuery } from 'react-responsive';
+import styles from '../styles/GaleriaVideos.module.scss';
 
 
 function ArrowLeft( props ) {
@@ -43,10 +44,17 @@ const GaleriaVideos = () => {
     const [ pause, setPause ] = useState( false );
     const timer = useRef();
 
+    let slidesPerView = 2;
+    const isPhone = useMediaQuery({ maxDeviceWidth: 414 });
+
+    if( isPhone ){
+        slidesPerView = 1;
+    }
+
     const [ sliderRef, slider ] = useKeenSlider({
         initial: 0,
         duration: 1000,
-        slidesPerView: 2,
+        slidesPerView: slidesPerView,
         loop: true,
         dragStart: () => {
             setPause(true)

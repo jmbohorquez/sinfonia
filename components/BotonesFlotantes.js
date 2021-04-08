@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import styles from '../styles/BotonesFlotantes.module.css'
+import styles from '../styles/BotonesFlotantes.module.scss'
 
 const BotonesFlotantes = () => {
 

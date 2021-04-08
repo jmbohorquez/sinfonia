@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../styles/Header.module.css'
+import styles from '../styles/Header.module.scss'
 
 const Header = () => {
 
@@ -7,7 +7,7 @@ const Header = () => {
         <header className={ styles.header }>
             <div className="site-wrap">
                 <Image 
-                    src="/logo.png"
+                    src="/logo-b.png"
                     alt="Venta de lotes condominio Sinfonía del Río Tabacal"
                     height={65}
                     width={165}

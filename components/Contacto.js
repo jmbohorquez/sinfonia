@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../styles/Contacto.module.css';
+import styles from '../styles/Contacto.module.scss';
 
 const Contacto = () => {
 

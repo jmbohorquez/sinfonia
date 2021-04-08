@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+
+@media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+    .btn-container{
+        justify-content: center;
+
+        .btn:first-of-type{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.btn{
+    align-items: center;
+    border-radius: 4px;
+    color: #FFF;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    width: fit-content;
+
+    @media ( min-width: $res-4k  ){
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+    }
+    
+    &:after{
+        content: '\2192';
+        margin-left: .5rem;
+    }
+    
+    &.btn-rojo{
+        background-color: #B73841;
+    }
+
+    &.btn-amarillo{
+        background-color: #D8A03E;
+    }
+}

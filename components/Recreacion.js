@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import BotonContacto from '../components/BotonContacto';
-import styles from '../styles/Recreacion.module.css'
+import styles from '../styles/Recreacion.module.scss'
 
 const Recreacion = () => {
 
@@ -32,9 +32,9 @@ const Recreacion = () => {
                     </div>
                     <div className={ `${ styles.botones_cta } btn-container block-columns` }>
                         <Link
-                            href="#Naturaleza"
+                            href="#Ventajas"
                         >
-                            <a className="btn btn-rojo">Quiero ver las zonas verdes</a>
+                            <a className="btn btn-rojo">Quiero ver las ventajas</a>
                         </Link>
                         <BotonContacto />
                     </div>

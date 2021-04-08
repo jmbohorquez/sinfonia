@@ -1,0 +1,86 @@
+@use './abstracts/variables' as *;
+
+.container{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.image_bg_container{
+    height: 100%;
+    width: 100%;
+    
+    div{
+        height: 100%;
+        width: 100%;
+    }
+}
+.text_container{
+    align-items: center;
+    display: flex;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+    p{
+        color: #FFF;
+    }
+}
+.titulo_container{
+    padding-right: 2rem;
+    width: 50%;
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        padding: 0;
+        width: 100%;
+    }
+    
+    h2{
+        color: #FFF;
+        
+        //Celular
+        @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        
+        //Pantallas viejas
+        @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+        //Pantallas 4K
+        @media ( min-width: $res-4k ){
+            font-size: 4rem;
+        }
+    }
+    
+    p{
+        color: #FFF;
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: 700;
+
+        //Celular
+        @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
+            font-size: 1.6rem;
+            margin-top: .5rem;
+        }
+        
+        @media ( min-width: $res-4k ){
+            font-size: 3rem;
+        }
+    }
+}
+
+.botones_cta{
+    justify-content: center;
+}

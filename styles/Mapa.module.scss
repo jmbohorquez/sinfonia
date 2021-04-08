@@ -1,0 +1,13 @@
+@use './abstracts/variables' as *;
+
+.contenedor{
+    line-height: 0;
+}
+.contenedor iframe{
+    border:none;
+    width: 100%;
+
+    @media ( min-width: $res-4k ){
+        height: 900px;
+    }
+}

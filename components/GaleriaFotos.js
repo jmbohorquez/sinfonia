@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect } from 'react'
 import Image from 'next/image';
 import ImageViewer from 'react-simple-image-viewer';
 
-import styles from '../styles/GaleriaFotos.module.css';
+import styles from '../styles/GaleriaFotos.module.scss';
 import Fotos from '../public/galeria/galeria.json';
 
 const GaleriaFotos = () => {

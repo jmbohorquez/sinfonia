@@ -2,10 +2,11 @@ import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react';
+import { useMediaQuery } from 'react-responsive';
 
 function ArrowLeft( props ) {
     
-    const disabeld = props.disabled ? " arrow--disabled" : ""
+    const disabeld = props.disabled ? " arrow--disabled" : "";
     
     return (
         <svg
@@ -77,37 +78,62 @@ const NaturalezaSlider = () => {
         }
 
     }, [ pause, slider ] );
+
+    const is4kScreen = useMediaQuery({ minDeviceWidth: 2560 })
     
     return(
         <>
             <div ref={ sliderRef } className="keen-slider">
                 <div className="keen-slider__slide number-slide1">
-                    <Image 
-                        src="/images/naturaleza-1.jpg"
-                        height={900}
-                        width={832}
-                    />
+                    {
+                        is4kScreen
+                        ?
+                            <Image 
+                                src="/images/naturaleza-1.jpg"
+                                height={1008}
+                                width={932}
+                            />
+                        :
+                            <Image 
+                                src="/images/naturaleza-1.jpg"
+                                height={900}
+                                width={832}
+                            />
+                    }
                 </div>
                 <div className="keen-slider__slide number-slide2">
-                    <Image 
-                        src="/images/naturaleza-2.jpg"
-                        height={900}
-                        width={832}
-                    />
+                    {
+                        is4kScreen
+                        ?
+                            <Image 
+                                src="/images/naturaleza-2.jpg"
+                                height={1008}
+                                width={932}
+                            />
+                        :
+                            <Image 
+                                src="/images/naturaleza-2.jpg"
+                                height={900}
+                                width={832}
+                            />
+                    }
                 </div>
                 <div className="keen-slider__slide number-slide3">
-                    <Image 
-                        src="/images/naturaleza-3.jpg"
-                        height={900}
-                        width={832}
-                    />
-                </div>
-                <div className="keen-slider__slide number-slide4">
-                    <Image 
-                        src="/images/naturaleza-4.jpg"
-                        height={900}
-                        width={832}
-                    />
+                    {
+                        is4kScreen
+                        ?
+                            <Image 
+                                src="/images/naturaleza-4.jpg"
+                                height={1008}
+                                width={932}
+                            />
+                        :
+                            <Image 
+                                src="/images/naturaleza-4.jpg"
+                                height={900}
+                                width={832}
+                            />
+                    }
                 </div>
             </div>
             { slider && (

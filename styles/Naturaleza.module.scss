@@ -1,0 +1,63 @@
+@use './abstracts/variables' as *;
+
+.container{
+    background-color: #EFDBB5;
+    padding: 4rem 0;
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        padding: 1rem;
+    }
+}
+.inner_columns{
+
+}
+.text_container {
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        padding-bottom: 2rem;
+    }
+    
+    h2{
+        color: #749E52;
+        border-bottom: solid 4px #749E52;
+    
+        //Celular
+        @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        
+        @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
+            font-size: 2rem;
+        }
+        
+        @media ( min-width: $res-4k ){
+            font-size: 3rem;
+        }
+    }
+
+    @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ) and (orientation: portrait){
+        padding-bottom: 2rem;
+    }
+
+}
+
+.sub_titulo{
+    font-weight: 700;
+    font-size: 1.8rem;
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
+        font-size: 1.6rem;
+    }
+}
+.slider{
+    position: relative;
+}

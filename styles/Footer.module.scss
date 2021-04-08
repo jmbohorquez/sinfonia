@@ -1,0 +1,26 @@
+@use './abstracts//variables' as *;
+
+.footer{
+    background-color: #000;
+    padding: 4rem 0;
+}
+.footer_inner{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        flex-flow: row wrap;
+    }
+}
+.footer_inner p{
+    color: #FFF;
+    font-size: 1rem;
+    font-style: italic;
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        font-size: 0.8rem;
+        text-align: center;
+        width: 100%;
+    }
+}
