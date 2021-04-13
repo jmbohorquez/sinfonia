@@ -29,6 +29,28 @@ const Naturaleza = () => {
                         <NaturalezaSlider />
                     </div>
                 </div>
+                <div className={ `${ styles.videos } block-columns has-2-columns` }>
+                    <div className={ `${ styles.video_item } block-column` }>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/VSLZsiA74dI" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowFullScreen></iframe>
+                    </div>
+                    <div className={ `${ styles.video_item } block-column` }>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/ZbvY9mNH_p8" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowFullScreen></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     );

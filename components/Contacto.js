@@ -31,6 +31,8 @@ const Contacto = () => {
                     </div>
                     <div className="block-column">
                         <p><strong>Teléfono:</strong> 314 255 7787<br />
+                        <strong>Teléfono:</strong> 311 829 6853<br />
+                        <strong>Teléfono:</strong> 310 790 4156<br />
                         <strong>Email:</strong> info@sinfonia.com<br />
                         <strong>Instagram:</strong> <a href="https://www.instagram.com/sinfoniacondominio/" target="_blank">/sinfoniacondominio</a><br />
                         <strong>Facebook:</strong> <a href="https://www.facebook.com/Sinfonia-Condominio-Campestre-112864846935011/" target="_blank">/Sinfonia-Condominio-Campestre</a></p>

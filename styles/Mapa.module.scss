@@ -11,3 +11,11 @@
         height: 900px;
     }
 }
+.contenedor_botones{
+    justify-content: center;
+    padding: 2rem 0;
+
+    .mapa_btn{
+        line-height: normal;
+    }
+}

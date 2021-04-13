@@ -61,3 +61,11 @@
 .slider{
     position: relative;
 }
+
+.videos{
+    padding-top: 2rem;
+
+    .video_item iframe{
+        width: 100%;
+    }
+}
