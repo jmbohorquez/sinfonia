@@ -33,15 +33,15 @@ const Contacto = () => {
                         <p><strong>Teléfono:</strong> 314 255 7787<br />
                         <strong>Teléfono:</strong> 311 829 6853<br />
                         <strong>Teléfono:</strong> 310 790 4156<br />
-                        <strong>Email:</strong> info@sinfonia.com<br />
+                        <strong>Email:</strong> condominiosinfonia62@gmail.com<br />
                         <strong>Instagram:</strong> <a href="https://www.instagram.com/sinfoniacondominio/" target="_blank">/sinfoniacondominio</a><br />
                         <strong>Facebook:</strong> <a href="https://www.facebook.com/Sinfonia-Condominio-Campestre-112864846935011/" target="_blank">/Sinfonia-Condominio-Campestre</a></p>
                     </div>
                     <div className="block-column">
                         <iframe 
-                            onload="javascript:parent.scrollTo(0,0);" 
+                            onLoad="javascript:parent.scrollTo(0,0);" 
                             height="602" 
-                            allowTransparency="true" 
+                            allowtransparency="true" 
                             scrolling="no" 
                             frameBorder="0" 
                             

@@ -11,7 +11,7 @@ const CabeceraSlideVideos = () => {
                     height="1080"
                     className="cover"
                     muted="muted"
-                    autoPlay="true"
+                    autoPlay={ true }
                     id="video-1"
                 ></video>
             </div>
