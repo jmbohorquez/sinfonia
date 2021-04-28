@@ -20,14 +20,37 @@ const Recreacion = () => {
                 <div className="site-wrap">
                     <div className={ styles.titulo_container }>
                         <h2 className="site-title">Zonas de recreación</h2>
-                        <p>Un Condominio para Toda la Familia</p>
+                        <p>Un Condominio Campestre en La Vega, Cundinamarca,  para toda la familia que cuenta con:</p>
                     </div>
-                    <div className="block-columns has-2-columns">
-                        <div className="block-column">
-                            <p>Espacio para todos que contará con: Gimnasio, Cancha de Tenis, Muro de Tenis, Kiosco, Baños, Parque Infantil, Sendero Ecológico, Río, Cascada, Quebradas, Piscina, Jacuzzi, Sauna, Turco, zona BBQ y Pesca Deportiva.</p>
+                    <div className={ `${ styles.listas } block-columns has-3-columns` }>
+                        <div className={ `${ styles.listas_container } block-column` }>
+                            <ul className={ styles.lista }>
+                                <li>Piscina para adultos</li>
+                                <li>Piscina para niños</li>
+                                <li>Jacuzzi</li>
+                                <li>Sauna</li>
+                                <li>Turco</li>
+                                <li>Gimnasio</li>
+                            </ul>
                         </div>
-                        <div className="block-column">
-                            <p>Permita que los chicos disfruten de una sana diversión sin perturbar su paz o la de los demás; en un lugar especial del condominio. </p>
+                        <div className={ `${ styles.listas_container } block-column` }>
+                            <ul className={ styles.lista }>
+                                <li>Cancha de tenis</li>
+                                <li>Muro de tenis</li>
+                                <li>Kiosco</li>
+                                <li>Parque infantil</li>
+                                <li>Baños</li>
+                                <li>1 km de río con sus playas</li>
+                            </ul>
+                        </div>
+                        <div className={ `${ styles.listas_container } block-column` }>
+                            <ul className={ styles.lista }>
+                                <li>3 quebradas</li>
+                                <li>Cascada</li>
+                                <li>BBQ</li>
+                                <li>Pesca deportiva</li>
+                                <li>Sendero ecológico</li>
+                            </ul>
                         </div>
                     </div>
                     <div className={ `${ styles.botones_cta } btn-container block-columns` }>

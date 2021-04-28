@@ -44,20 +44,6 @@
 
 }
 
-.sub_titulo{
-    font-weight: 700;
-    font-size: 1.8rem;
-
-    //Celular
-    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
-        font-size: 1.3rem;
-        text-align: center;
-    }
-
-    @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
-        font-size: 1.6rem;
-    }
-}
 .slider{
     position: relative;
 }

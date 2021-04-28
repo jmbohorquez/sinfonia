@@ -22,7 +22,7 @@ const Cabecera = () => {
                 <div className={ `${ styles.site_wrap } site-wrap` }>
                     <div className={ styles.cabecera_text_container }>
                         <Redes />
-                        <h1 className="site-title">Casas modernas con estilo colonial</h1>
+                        <h1 className="site-title">Condominio campestre sinfonía, La Vega, Cundinamarca</h1>
                         <p className={ styles.cabecera_descripcion }>Vive un ambiente natural a 50 minutos de Bogotá…</p>
                         <div className="btn-container block-columns">
                             <Link

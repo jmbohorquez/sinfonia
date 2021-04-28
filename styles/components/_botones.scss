@@ -18,6 +18,7 @@
     flex-flow: row nowrap;
     padding: 1rem 1.5rem;
     text-transform: uppercase;
+    transition: all .3s ease-in-out;
     width: fit-content;
 
     @media ( min-width: $res-4k  ){
@@ -29,12 +30,21 @@
         content: '\2192';
         margin-left: .5rem;
     }
+
     
     &.btn-rojo{
         background-color: #B73841;
+
+        &:hover{
+            background-color: #749E52;
+        }
     }
 
     &.btn-amarillo{
         background-color: #D8A03E;
+
+        &:hover{
+            background-color: #749E52;
+        }
     }
 }

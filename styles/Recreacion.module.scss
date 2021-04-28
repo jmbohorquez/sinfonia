@@ -4,6 +4,11 @@
     height: 100vh;
     position: relative;
     width: 100%;
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        height: auto;
+    }
 }
 .image_bg_container{
     height: 100%;
@@ -26,10 +31,28 @@
     p{
         color: #FFF;
     }
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        height: auto;
+    }
+}
+.listas{
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        .listas_container{
+            width: 45%;
+
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
 }
 .titulo_container{
-    padding-right: 2rem;
-    width: 50%;
+    margin: auto;
+    width: 60%;
 
     //Celular
     @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
@@ -39,6 +62,7 @@
     
     h2{
         color: #FFF;
+        text-align: center;
         
         //Celular
         @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
@@ -61,8 +85,9 @@
     p{
         color: #FFF;
         font-style: italic;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-weight: 700;
+        text-align: center;
 
         //Celular
         @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
@@ -83,4 +108,16 @@
 
 .botones_cta{
     justify-content: center;
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        padding-top: 2rem;
+    }
+}
+
+.lista{
+    color: #FFF;
+
+    li{
+        padding: 2px 0;
+    }
 }

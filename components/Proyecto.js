@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
+import VideosNaturaleza from './VideosNaturaleza';
 import BotonContacto from '../components/BotonContacto';
 import styles from '../styles/Proyecto.module.scss';
 
@@ -13,12 +14,20 @@ const Proyecto = () => {
             <section id="Proyecto" className={ styles.proyecto_container }>
                 <div className={ `${ styles.proyecto_inner } site-wrap` }>
                     <div className={ styles.proyecto_text_container }>
-                        <h3>Condominio de casas blancas con techos coloniales, mediterráneos o mixtos en La Vega, cundinamarca</h3>
-                        <p>Opciones de terrazas mirador que complementan la armonía arquitectónica del condominio y propician una experiencia de tranquilidad.</p>
+                        <p>A  53 ½ Kms de Bogotá, altitud 1.100 metros snm, clima ideal del ser humano con 24 grados centígrados en promedio en el día y fresco en la noche, lo que evita el uso de aires acondicionados.</p>
                         <ul>
-                            <li>Lotes desde 760m<sup>2</sup> hasta 2800m<sup>2</sup>.</li>
-                            <li>Precios desde $350.000m<sup>2</sup>.</li>
-                            <li>Casas separadas por 10m de distancia una de otra.</li>
+                            <li>Casas separadas por lo menos 10 m de distancia una de otra en un ambiente ecológico y construidas a su gusto</li>
+                            <li>62 Lotes desde 617 m<sup>2</sup>  hasta 2777 m<sup>2</sup>.( planos, semiplanos, montañosos)</li>
+                            <li>40% de lotes vendidos, 60% en venta</li>
+                            <li>4 casas habitadas</li>
+                            <li>6 casas en construcción</li>
+                            <li>Zona Social a terminarse en Julio</li>
+                            <li>Actualmente disponibles lotes desde 760 m2</li>
+                            <li>Precios desde $350.000 m<sup>2</sup></li>
+                            <li>Área total del Condominio Campestre m<sup>2</sup></li>
+                            <li>45.000 m<sup>2</sup> de reserva forestal</li>
+                            <li>1 ¼ km de río, con playas disfrutables y rodeado de guaduales</li>
+                            <li>2 km de carretera interna para  caminar</li>
                         </ul>
                     </div>
                     <div className={ styles.proyecto_image_container }>
@@ -42,6 +51,7 @@ const Proyecto = () => {
                     </div>
                 </div>
             </section>
+            <VideosNaturaleza />
             <section className={ styles.proyecto_casa_container }>
                 <Image 
                     src="/images/casa-proyecto-condominio-sinfonia.jpg"
@@ -52,7 +62,7 @@ const Proyecto = () => {
                 />
                 <div className={ styles.proyecto_casa_texto_container }>
                     <div className={ styles.proyecto_casa_texto_inner }>
-                        <h3>Cada propietario tiene la libertad de construir a gusto propio respetando la normativa municipal y las establecidas por el condominio.</h3>
+                        <h3>Cada propietario tiene la libertad de construir a gusto propio respetando la normativa municipal y las establecidas por el condominio (Pintura blanca en fachadas  y techos Coloniales con teja de barro o shingle o terraza o plancha.)</h3>
                         <div className="btn-container block-columns">
                             <Link
                                 href="#Naturaleza"

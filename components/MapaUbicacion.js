@@ -11,14 +11,6 @@ const MapaUbicacion = () => {
                 height="450" 
                 loading="lazy"
             ></iframe>
-            <div className={ `${ styles.contenedor_botones } btn-container block-columns` }>
-                <Link
-                    href="https://goo.gl/maps/GmdvoPj1hZpvWDW46"
-                ><a className={ `${ styles.mapa_btn } btn btn-rojo` }>Llegar con Google maps</a></Link>
-                <Link
-                    href="https://www.waze.com/live-map/directions/colombia/cundinamarca/condominio-campestre-sinfonia-del-rio-tabacal?utm_source=waze_website&utm_medium=lm_share_directions&utm_campaign=iframe+module&to=place.ChIJTXH2HtGFQI4R4ZY7tlpaimU&from=place.EixTaWJlcmlhLUZ1bnphLCBGdW56YSwgQ3VuZGluYW1hcmNhLCBDb2xvbWJpYSIuKiwKFAoSCWHKscUBgz-OESCTngIu9QrCEhQKEgnDmoG_qII_jhF-rjfIAWmU0w"
-                ><a className={ `${ styles.mapa_btn } btn btn-rojo` }>Llegar con Waze</a></Link>
-            </div>
         </div>
     );
 

@@ -2,32 +2,22 @@ import Image from 'next/image';
 import styles from '../styles/Contacto.module.scss';
 
 const Contacto = () => {
-
-    const cerrarContacto = () => {
-
-        const panel = document.getElementById('Contacto');
-        panel.style.display = 'none';
-
-    }
     
     return(
         <section id="Contacto" className={ styles.container }>
             <div className="site-wrap">
-                <div className={ styles.cierre }>
-                    <a 
-                        href="#!"
-                        onClick={ () => cerrarContacto() }
-                    >&#215;</a>
-                </div>
                 <h2 className="site-title">Contáctanos</h2>
                 <div className="block-columns has-3-columns">
                     <div className="block-column">
                         <Image 
-                            src="/logo.png"
+                            src="/logo-b.png"
                             alt="Venta de lotes condominio Sinfonía del Río Tabacal"
                             height={65}
                             width={165}
                         />
+                        <p><strong>Visitas:</strong><br />
+                        De lunes a domingo <br />
+                        7:00 am a 5:00 pm</p>
                     </div>
                     <div className="block-column">
                         <p><strong>Teléfono:</strong> 314 255 7787<br />

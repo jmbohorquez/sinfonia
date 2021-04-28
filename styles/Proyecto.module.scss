@@ -2,7 +2,6 @@
 
 .proyecto_container{
     background-color: #EEDDCF;
-    height: 80vh;
     position: relative;
 
     //Celular
@@ -22,6 +21,8 @@
     
 }
 .proyecto_inner{
+    display: flex;
+    flex-flow: row nowrap;
     height: 100%;
 
     //Celular
@@ -50,7 +51,7 @@
     flex-flow: column;
     justify-content: center;
     height: 100%;
-    padding: 2rem 1rem 2rem 0;
+    padding: 2rem 2rem 2rem 0;
     width: 50%;
 
     //Celular
@@ -116,11 +117,9 @@
     }
 }
 .proyecto_image_container{
-    box-shadow: 0 0 20px #000;
     line-height: 0;
-    top: -25%;
     right: 0;
-    position: absolute;
+    padding-top: 2rem;
     width: 50%;
     z-index: 9999;
 
@@ -191,7 +190,7 @@
     flex-flow: column;
     justify-content: flex-end;
     height: 100% !important;
-    width: 50% !important;
+    width: 60% !important;
 
     //Celular
     @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
@@ -205,7 +204,7 @@
     
     h3{
         color: #FFF;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-shadow: 1px 3px 5px #000;
 
         //Celular

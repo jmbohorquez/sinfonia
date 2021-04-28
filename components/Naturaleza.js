@@ -14,8 +14,7 @@ const Naturaleza = () => {
                 <div className={ isIpad ? styles.inner_columns : "block-columns has-2-columns" }>
                     <div className={ `${ styles.text_container } block-column` }>
                         <h2 className="site-title">La naturaleza, tu mejor vecina</h2>
-                        <p className={ styles.sub_titulo }>Disfruta del Río Tabacal</p>
-                        <p>La fantasía de dormir arrullado por el sinfónico sonido del río, la paz de la naturaleza, el clima abrigador, la flora y fauna, junto a la cercanía con Bogotá hacen de éste un lugar ÚNICO para su merecido descanso.</p>
+                        <p>La fantasía de dormir arrullado por el sonido sinfónico del Río, 3 quebradas y una cascada, rodeados de guaduales y de una relajante vegetación, su fauna y flora y el clima abrigador cerca a Bogotá, hace de este un lugar único para el descanso.</p>
                         <div className={ `${ styles.botones_cta } btn-container block-columns` }>
                             <Link
                                 href="#Recreacion"
@@ -27,28 +26,6 @@ const Naturaleza = () => {
                     </div>
                     <div className={ `${ styles.slider } block-column` }>
                         <NaturalezaSlider />
-                    </div>
-                </div>
-                <div className={ `${ styles.videos } block-columns has-2-columns` }>
-                    <div className={ `${ styles.video_item } block-column` }>
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/VSLZsiA74dI" 
-                            title="YouTube video player" 
-                            frameBorder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowFullScreen></iframe>
-                    </div>
-                    <div className={ `${ styles.video_item } block-column` }>
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/ZbvY9mNH_p8" 
-                            title="YouTube video player" 
-                            frameBorder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowFullScreen></iframe>
                     </div>
                 </div>
             </div>

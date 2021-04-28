@@ -1,0 +1,17 @@
+@use './abstracts/variables' as *;
+
+.container{
+    background-color: #FFF;
+    padding: 4rem 0;
+}
+.vid_container{
+    iframe{
+        width: 100%; 
+    }
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        &:first-of-type{
+            margin-bottom: 2rem;
+        }
+    }
+}

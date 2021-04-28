@@ -20,6 +20,10 @@
     padding: 0.8rem;
     width: 48px;
 
+    &:hover{
+        background-color: #749E52;
+    }
+
     @media ( min-width: $res-4k ){
         height: 64px;
         width: 64px;

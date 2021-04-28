@@ -40,19 +40,5 @@
         "alt": "Vista aerea del condominio",
         "ancho":1920,
         "alto":1080
-    },
-    {
-        "id":6,
-        "url": "/galeria/foto-7.jpg",
-        "alt": "Vista aerea del condominio",
-        "ancho":1920,
-        "alto":1080
-    },
-    {
-        "id":7,
-        "url": "/galeria/foto-8.jpg",
-        "alt": "Vista lateral de la casa",
-        "ancho":1920,
-        "alto":1080
     }
 ]
