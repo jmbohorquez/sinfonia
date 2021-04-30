@@ -24,7 +24,7 @@ const Proyecto = () => {
                             <li>Zona Social a terminarse en Julio</li>
                             <li>Actualmente disponibles lotes desde 760 m2</li>
                             <li>Precios desde $350.000 m<sup>2</sup></li>
-                            <li>Área total del Condominio Campestre m<sup>2</sup></li>
+                            <li>Área total del Condominio Campestre 166.676 m<sup>2</sup></li>
                             <li>45.000 m<sup>2</sup> de reserva forestal</li>
                             <li>1 ¼ km de río, con playas disfrutables y rodeado de guaduales</li>
                             <li>2 km de carretera interna para  caminar</li>
