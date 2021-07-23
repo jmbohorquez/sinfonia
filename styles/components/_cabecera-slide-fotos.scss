@@ -50,7 +50,8 @@
             }
 
             @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ) and (orientation: portrait){
-                font-size: 1rem;
+                font-size: 3rem;
+                max-width: 90%;
             }
         }
         .sub-titulo{

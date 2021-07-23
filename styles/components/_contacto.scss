@@ -1,15 +1,23 @@
 @use './abstracts/variables' as *;
 
-.container{
+.contacto-container{
     padding: 4rem 0;
     background-color: rgba(0,0,0,0.8);
     top: 0;
     width: 100%;
     z-index: 99999;
     transition: all .5s linear;
+
+    .block-column{
+        iframe{
+            @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ) and (orientation: portrait){
+                width: 100%;
+            }
+        }
+    }
 }
 
-.container h2{
+.contacto-container h2{
     color: #FFF;
     text-align: center;
     max-width: 50%;
@@ -20,6 +28,6 @@
         max-width: 90%;
     }
 }
-.container p{
+.contacto-container p{
     color: #FFF;
 }

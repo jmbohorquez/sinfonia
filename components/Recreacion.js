@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import Flecha from '../public/images/flecha.svg'
+
 const Recreacion = () => {
 
     return(
@@ -57,7 +59,7 @@ const Recreacion = () => {
                         <Link
                             href="#Contacto"
                         >
-                            <a className="btn btn-rojo"></a>
+                            <a className="btn btn-rojo"><Flecha /></a>
                         </Link>
                     </div>
                 </div>

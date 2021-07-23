@@ -1,12 +1,11 @@
 import Image from 'next/image';
-import styles from '../styles/Contacto.module.scss';
 
 import Galeria from '../components/GaleriaFotos'
 
 const Contacto = () => {
     
     return(
-        <section id="Contacto" className={ styles.container }>
+        <section id="Contacto" className="contacto-container">
             <div className="site-wrap">
                 <h2 className="site-title">Contáctanos</h2>
                 <div className="block-columns has-3-columns">
