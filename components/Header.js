@@ -5,13 +5,16 @@ const Header = () => {
 
     return(
         <header className={ styles.header }>
-            <div className="site-wrap">
+            <div className={ `site-wrap ${ styles.wrap }` }>
                 <Image 
-                    src="/logo-b.png"
+                    src="/logo.png"
                     alt="Venta de lotes condominio Sinfonía del Río Tabacal"
-                    height={65}
-                    width={165}
+                    height={48}
+                    width={122}
                 />
+                <div className="contact-wrap">
+                    <p>Contáctanos: +57 323 304 3793</p>
+                </div>
             </div>
         </header>
     );

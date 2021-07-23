@@ -1,18 +1,17 @@
 @use './abstracts/variables' as *;
 
 .container{
-    background-color: #EFDBB5;
-    padding: 4rem 0;
+    padding: 0 0 4rem;
 
     //Celular
     @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
         padding: 1rem;
     }
 }
-.inner_columns{
-
-}
 .text_container {
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 60%;
 
     //Celular
     @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
@@ -22,6 +21,9 @@
     h2{
         color: #749E52;
         border-bottom: solid 4px #749E52;
+        padding-bottom: 1rem;
+        text-align: center;
+        text-transform: uppercase;
     
         //Celular
         @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
@@ -38,6 +40,10 @@
         }
     }
 
+    p{
+        text-align: center;
+    }
+
     @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ) and (orientation: portrait){
         padding-bottom: 2rem;
     }
@@ -46,12 +52,4 @@
 
 .slider{
     position: relative;
-}
-
-.videos{
-    padding-top: 2rem;
-
-    .video_item iframe{
-        width: 100%;
-    }
 }

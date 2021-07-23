@@ -1,0 +1,205 @@
+@use './abstracts/variables' as *;
+
+.proyecto_container{
+    padding: 4rem 0;
+    position: relative;
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        height: auto;
+    }
+
+    //Ipad
+    @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ){
+        height: auto;
+    }
+    
+    //iPad Pro
+    @media  only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+        height: auto;
+    }
+    
+}
+.proyecto_inner{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    .copy{
+        font-size: 2rem;
+        margin: 2.8rem auto;
+        text-align: center;
+        width: 50%;
+    }
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        column-gap: 2rem;
+    }
+    //Ipad
+    @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ){
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+    }
+    
+    //iPad Pro
+    @media  only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+        display: flex;
+    }
+
+}
+.proyecto_text_container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+    padding: 1rem;
+
+    .col{
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        width: 33.3333%;
+
+        svg{
+            fill: #D8A03F;
+            height: auto;
+            margin: auto;
+            width: 122px;
+        }
+
+        p{
+            font-size: 1.6rem;
+            text-align: center;
+
+            strong{
+                display: block;
+            }
+        }
+    }
+
+    //Celular
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 100%;
+    }
+    
+    //Ipad
+    @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ){
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding: 2rem 0 2rem;
+        width: 100%;
+    }
+    
+    h3{
+        font-size: 2rem;
+
+        //Celular
+        @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+            font-size: 1.4rem;
+        }
+
+        //Pantallas viejas
+        @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
+            font-size: 1.6rem;
+        }
+        
+        //Pantallas 4K
+        @media ( min-width: $res-4k ){
+            font-size: 2.5rem;
+        }
+    }
+    
+    
+}
+.proyecto-caracteristicas-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    padding-top: 2rem;
+
+    div{
+        width: 50%;
+    }
+    
+    .lista{
+        ul{
+            font-size: 1.2rem;
+            line-height: 180%;
+            list-style: none;
+    
+            //Celular
+            @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+                font-size: 1.1rem;
+            }
+            
+            @media ( min-width: $resOldScreenMin ) and ( max-width: $resOldScreenMax ){
+                font-size: 1rem;
+            }
+            
+            @media ( min-width: $res-4k ){
+                font-size: 1.8rem;
+            }
+            
+            li::before {
+                content: "\2022";
+                color: #B73841;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+    }
+
+    .btn-map{
+        background-color: #B73841;
+        border-radius: 8px;
+        display: flex;
+        height: 80px;
+        flex-flow: row nowrap;
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            background-color: #D8A03E;
+        }
+
+        span{
+            display: block;
+        }
+
+        .icon{
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            display: flex;
+            justify-content: center;
+            background-color: #E6E6E6;
+            height: 105px;
+            margin-top: -12px;
+            width: 105px;
+
+            svg{
+                height: 60%;
+                width: auto;
+            }
+        }
+        .text{
+            align-items: center;
+            color: #FFF;
+            display: flex;
+            padding-left: 1rem;
+            text-transform: uppercase;
+        }
+    }
+}

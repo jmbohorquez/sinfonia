@@ -2,7 +2,6 @@ import { useState, useCallback, useEffect } from 'react'
 import Image from 'next/image';
 import ImageViewer from 'react-simple-image-viewer';
 
-import styles from '../styles/GaleriaFotos.module.scss';
 import Fotos from '../public/galeria/galeria.json';
 
 const GaleriaFotos = () => {
@@ -35,13 +34,13 @@ const GaleriaFotos = () => {
     }, [] );
     
     return(
-        <section id="Galeria-Fotos" className={ styles.container }>
-            <div className="site-wrap block-grid has-3-columns">
+        <section className="galeria">
+            <div className="galeria-grid">
                 {
                     Fotos.map( foto => (
                         <div 
                             key={ foto.id }
-                            className={ `${ styles.imagen_contenedor } block-column` }
+                            className="galeria-item"
                         >
                             <Image 
                                 src={ foto.url }
@@ -59,7 +58,8 @@ const GaleriaFotos = () => {
                         currentIndex={ currentImage }
                         onClose={ closeImageViewer }
                         backgroundStyle={{ 
-                            backgroundColor: 'rgba( 0,0,0,0.7 )'
+                            backgroundColor: 'rgba( 0,0,0,0.9 )',
+                            zIndex: '999999'
                         }}
                     />
                 )}
