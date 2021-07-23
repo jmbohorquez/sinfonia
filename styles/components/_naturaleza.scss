@@ -1,11 +1,11 @@
 @use './abstracts/variables' as *;
 
-.container{
+.naturaleza-container{
     padding: 0 0 4rem;
 
     //Celular
     @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
-        padding: 1rem;
+        
     }
 }
 .text_container {
@@ -15,7 +15,8 @@
 
     //Celular
     @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
-        padding-bottom: 2rem;
+        padding: 1rem 0 1rem;
+        width: 90%;
     }
     
     h2{

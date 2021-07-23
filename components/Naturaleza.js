@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 const Naturaleza = () => {
     
     return(
-        <section id="Naturaleza" className="container">
+        <section id="Naturaleza" className="naturaleza-container">
             <NaturalezaSlider />
             <div className="site-wrap">
                 <div className="text_container">

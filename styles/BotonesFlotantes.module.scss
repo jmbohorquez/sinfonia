@@ -1,9 +1,15 @@
+@use './abstracts/variables' as *;
 
 .container{
     bottom: 1rem;
     position: fixed;
     left: 1rem;
     z-index: 99999;
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+       display: flex;
+       flex-flow: column; 
+    }
 }
 .btn{
     align-items: center;
@@ -16,14 +22,32 @@
     line-height: 0;
     padding: 0 .8rem;
     width: fit-content;
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        &:first-of-type{
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+        height: 40px;
+    }
     
     svg{
         fill: #FFF;
+
+        @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+            height: 22px;
+        }
     }
     span{
         color: #FFF;
         display: block;
         margin-left: .5rem;
         text-transform: uppercase;
+
+        @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+            font-size: .7rem;
+        }
     }
 }

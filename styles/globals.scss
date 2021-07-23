@@ -11,6 +11,8 @@
 
 /* ======================================== Componentes */
 
+@forward './components/header';
+@forward './components/cabecera';
 @forward './components/cabecera-slide-fotos';
 @forward './components/proyecto';
 @forward './components/naturaleza';

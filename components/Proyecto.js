@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
-import BotonContacto from '../components/BotonContacto';
 
 import Precio from '../public/images/precio.svg'
 import Altura from '../public/images/mountain.svg'
@@ -21,7 +19,7 @@ const Proyecto = () => {
                     <div className="proyecto_text_container">
                         <div className="col">
                             <Precio />
-                            <p>Lotes desde <strong>$266.700.000</strong></p>
+                            <p>Lotes desde <strong>$276.700.000</strong></p>
                         </div>
                         <div className="col">
                             <Distancia />

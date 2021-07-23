@@ -12,6 +12,7 @@
 }
 .image_bg_container{
     height: 100%;
+    object-fit: cover;
     width: 100%;
     
     div{
@@ -35,6 +36,7 @@
     //Celular
     @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
         height: auto;
+        padding: 2rem 0;
     }
 }
 

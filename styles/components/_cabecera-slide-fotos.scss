@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .header-slider{
     height: 100%;
 
@@ -34,12 +36,22 @@
         }
     }
     .banner-text-container{
-        .site-title{
+        h1.site-title{
             color: #FFF;
             margin: auto;
             max-width: 50%;
+            font-size: 3rem;
             text-align: center;
             text-transform: uppercase;
+
+            @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+                font-size: 2.3rem;
+                max-width: none;
+            }
+
+            @media ( min-width: $resIpadMin ) and ( max-width: $resIpadMax ) and (orientation: portrait){
+                font-size: 1rem;
+            }
         }
         .sub-titulo{
             border-bottom: solid 4px #FFF;
@@ -49,6 +61,12 @@
             padding-bottom: 0.5rem;
             text-align: center;
             text-transform: uppercase;
+
+            @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+                font-size: 1.2rem;
+                max-width: none;
+                padding: 1rem 0;
+            }
         }
         .copy{
             color: #FFF;
@@ -57,6 +75,11 @@
             padding-top: 1rem;
             text-align: center;
             text-transform: uppercase;
+
+            @media ( min-width: $resCelMin ) and ( max-width: $resCelMax ) and (orientation: portrait){
+                font-size: 1.8rem;
+                max-width: none;
+            }
         }
     }
 }
