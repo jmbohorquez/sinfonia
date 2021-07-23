@@ -19,7 +19,7 @@ const BotonesFlotantes = () => {
     return(
         <div className={ `${ styles.container } block-columns` }>
             <a
-                href="https://api.whatsapp.com/send?phone=+3142557787&text=Hola,%20Quiero%20más%20información"
+                href="https://api.whatsapp.com/send?phone=+573233043793&text=Hola,%20Quiero%20más%20información"
                 className={ styles.btn }
             >
                     <Whatsapp />

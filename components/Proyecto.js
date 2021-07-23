@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useMediaQuery } from 'react-responsive';
 
 import Precio from '../public/images/precio.svg'
 import Altura from '../public/images/mountain.svg'
@@ -9,8 +8,6 @@ import GoogleMaps from '../public/images/google-maps.svg'
 import Waze from '../public/images/waze.svg'
 
 const Proyecto = () => {
-
-    const is4kScreen = useMediaQuery({ minDeviceWidth: 2560 });
     
     return(
         <>
