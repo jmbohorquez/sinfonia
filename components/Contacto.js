@@ -19,15 +19,15 @@ const Contacto = () => {
                             width={165}
                         />
                     </div>
-                    <div className="block-column">
+                    <div className="block-column form-contact">
                         <iframe 
-                            height="602" 
-                            allowtransparency="true" 
-                            scrolling="no" 
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScNEKfxzyWpOn5J7GwUhVhiYkQ6E6L5sxao14hzQc3m0ejeSA/viewform?embedded=true" 
+                            width="640" 
+                            height="808" 
                             frameBorder="0" 
-                            
-                            src="https://www.i180.co/machform/embed.php?id=18638" 
-                            title="Condominio Sinfonía"><a href="https://www.i180.co/machform/view.php?id=18638" title="Condominio Sinfonía">Condominio Sinfonía</a></iframe>
+                            marginHeight="0" 
+                            marginWidth="0"
+                        >Cargando…</iframe>
                     </div>
                     <div className="block-column">
                         <Galeria />
