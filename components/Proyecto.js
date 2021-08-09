@@ -16,7 +16,7 @@ const Proyecto = () => {
                     <div className="proyecto_text_container">
                         <div className="col">
                             <Precio />
-                            <p>Lotes desde <strong>$276.700.000</strong></p>
+                            <p>Lotes desde <strong>$304.800.000</strong></p>
                         </div>
                         <div className="col">
                             <Distancia />
